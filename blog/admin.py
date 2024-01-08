@@ -36,6 +36,6 @@ class SubmissionAdmin(admin.ModelAdmin):
     # Allows the admin to filter through the author's name and titles of short story submissions
     list_filter = ('name', 'title')
     # Displays the name of the author, title of the submission and the body of the text
-    list_display = ('name', 'title', 'body', 'slug')
+    list_display = ('name', 'title', 'body')
     # Allows the admin to search for short stories by name of author and their title
     search_fields = ['name', 'title']
