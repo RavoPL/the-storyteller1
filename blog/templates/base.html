@@ -110,12 +110,26 @@
                     </div>
                     {% else %}
                     {% if user.is_authenticated %}
+                    <hr>
                     <h3>Submit a Short Story:</h3>
+                    <hr>
                     <p>Posting as: {{ user.username }}</p>
-                    <form method="post" style="margin-top: 1.3em;">
-                        {{ submission_form | crispy }}
+                    <form method="POST" action="{% url 'submit_view' %}">
                         {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                        <br>
+                        Author Name:
+                        <input type="text" class="form-control" name="name">
+                        <br>
+                        <br>
+                        Message Title:
+                        <input type="text" class="form-control" name="title">
+                        <br>
+                        <br>
+                        Message:
+                        <textarea name="body" class="form-control" rows="5"></textarea>
+                        <br>
+                        <input type="submit" value="Submit Message" class="btn btn-black">
+                        <br>
                     </form>
                     {% endif %}
                     {% endif %}

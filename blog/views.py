@@ -1,6 +1,7 @@
-from django.shortcuts import render, HttpResponse, get_object_or_404, reverse
+from django.shortcuts import render, redirect, HttpResponse, get_object_or_404, reverse
+from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Submission
 from django.views import generic, View
 from .forms import CommentForm, SubmissionForm
 
@@ -13,40 +14,21 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 class SubmissionView(View):
-    def get(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-
-        return render(
-            request,
-            "base.html",
-            {
-                "submission_form": SubmissionForm(),
-            },
-        )
-
-    def post(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
-            
-        submission_form = SubmissionForm(data=request.POST)
-        if submission_form.is_valid():
-            submission_form.instance.name = request.user.username
-            submission = submission_form.save(commit=False)
-            submission.post = post
-            submission.save()
+    def post(self, request, *args, **kwargs):
+        url = request.META.get('HTTP_REFERER')
+        form = SubmissionForm(request.POST)
+        if form.is_valid():
+            data = Submission()
+            data.user_id = request.user.id
+            data.name = form.cleaned_data['name']
+            data.title = form.cleaned_data['title']
+            data.body = form.cleaned_data['body']
+            data.save()
+            messages.success(request, 'Thank you! Your short story has been sent!')
         else:
-            submission_form = SubmissionForm()
-            
-        return render(
-            request,
-            "base.html",
-            {
-                "submission_form": submission_form,
-            },
-        )
-
-        return HttpResponseRedirect(reverse('base.html', args=[slug]))
+            messages.success(request, form.errors)
+                
+        return redirect(url)
 
 class PostDetail(View):
 
