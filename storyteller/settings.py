@@ -34,7 +34,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['the-storyteller.herokuapp.com', 'localhost', '8000-ravopl-thestoryteller1-cno8p9mhy6s.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['the-storyteller1.herokuapp.com', 'localhost', '8000-ravopl-thestoryteller1-cno8p9mhy6s.ws-eu108.gitpod.io']
 
 
 # Application definition
