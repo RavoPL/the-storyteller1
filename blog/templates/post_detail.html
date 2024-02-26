@@ -2,6 +2,11 @@
 {% load crispy_forms_tags %}
 
 <div class="masthead">
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
@@ -24,7 +29,6 @@
                     {{ post.content | safe }}
                 </div>
                 <div class="row">
-
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
