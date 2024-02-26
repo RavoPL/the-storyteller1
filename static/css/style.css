@@ -33,13 +33,6 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-header.bgImgCenter{
-    background-image: url('../media/img/home-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center; 
-    position: relative;
-}
-
 .site-heading {
   color: white;
   text-shadow:
@@ -47,7 +40,7 @@ header.bgImgCenter{
   2px -2px 0 #000,
   -2px 2px 0 #000,
   2px 2px 0 #000;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .subheading {
@@ -67,7 +60,7 @@ header.bgImgCenter{
 
 html, body {
   overflow-x: hidden;
-} 
+}
 
 body {
   margin: 0;
@@ -251,7 +244,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   background-color: #6c757d;
   background-size: cover;
   background-attachment: scroll;
-  height: 60%;
+  height: 40%;
   width: 100%;
 }
 
