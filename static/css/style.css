@@ -144,17 +144,17 @@ p {
   font-family: 'Courier New', Courier, monospace;
 }
 
-a {
-  color: var(--bs-link-color);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--bs-link-hover-color);
+.navbar-text {
+  color: var(--bs-link-hover-color) !important;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
+a {
+  color: var(--bs-link-color) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color) !important;
 }
 
 .container-new {
