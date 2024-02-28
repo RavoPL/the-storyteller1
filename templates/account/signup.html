@@ -4,10 +4,19 @@
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
+{% block story %} {% endblock %}
+
 {% block content %}
+
+<style>
+    button:hover {
+        color: #0085A1 !important;
+    }
+</style>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 mt-3 offset-md-2 text-center">
             <h3>{% trans "Sign Up" %}</h3>
 
             <p>{% blocktrans %}Welcome back to The Storyteller. Do you already have an account? Then please <a
@@ -15,7 +24,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                 {% csrf_token %}
                 {{ form.as_p }}

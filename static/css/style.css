@@ -148,12 +148,20 @@ p {
   color: var(--bs-link-hover-color) !important;
 }
 
+.navbar-toggler {
+  color: #212529 !important;
+}
+
 a {
   color: var(--bs-link-color) !important;
   text-decoration: none !important;
 }
 
 a:hover {
+  color: var(--bs-link-hover-color) !important;
+}
+
+.storysubmit:hover {
   color: var(--bs-link-hover-color) !important;
 }
 

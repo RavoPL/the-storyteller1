@@ -5,11 +5,19 @@
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
+{% block story %} {% endblock %}
+
 {% block content %}
+
+<style>
+    button:hover {
+        color: #0085A1 !important;
+    }
+</style>
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 mt-3 offset-md-2 text-center">
             <h3>{% trans "Sign In" %}</h3>
 
             <p>{% blocktrans %}Welcome back to The Storyteller. To leave a comment or like a post, please log in. If
@@ -19,7 +27,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 mt-3 offset-md-2 d-flex justify-content-center">
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}

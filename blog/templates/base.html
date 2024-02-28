@@ -106,6 +106,7 @@
     </main>
 
     <!-- CUSTOM SHORT STORY SUBMISSION MODEL -->
+    {% block story %}
     <footer class="border-top">
         <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
@@ -134,7 +135,7 @@
                         Message:
                         <textarea name="body" class="form-control" rows="5"></textarea>
                         <br>
-                        <input type="submit" value="Submit Message" class="btn btn-black">
+                        <input type="submit" value="Submit Message" class="storysubmit btn btn-black">
                         <br>
                     </form>
                     {% endif %}
@@ -143,6 +144,7 @@
             </div>
         </div>
     </footer>
+    {% endblock %}
 
     <!-- Footer -->
     <footer class="border-top">
