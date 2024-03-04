@@ -152,9 +152,7 @@ Custom *Story Submission* model - **FINISHED**
 
 Corresponding to **User Story - Approve or Reject Short Story**([#18](https://github.com/RavoPL/the-storyteller/issues/18))
 
-![Image of My Story Submission Model](media/ReviewModel.png)
-
-Working on a Custom Model to Allow User to Submit Stories (*BROKE THE WHOLE PROJECT, SLUG ERROR WITH MIGRATIONS*)
+![Image of My Story Submission Model](static/media/others/storysubmission.png)
 
 ## Technologies Used
 
