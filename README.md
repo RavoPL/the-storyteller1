@@ -25,6 +25,7 @@ Developed by **Dorian Wolarz**, a Code Institute Student
     - [Structure](#structure)
     - [Wireframes](#wireframes)
 4. [Features](#features)
+    - [Story Submission](#story-submission)
 5. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Tools and Websites](#tools-and-websites)
@@ -144,6 +145,14 @@ The website is structured in a user friendly way that makes navigation of its co
 </details>
 
 ## Features
+
+### Story Submission
+
+Custom *Story Submission* model - **FINISHED**
+
+Corresponding to **User Story - Approve or Reject Short Story**([#18](https://github.com/RavoPL/the-storyteller/issues/18))
+
+![Image of My Story Submission Model](media/ReviewModel.png)
 
 Working on a Custom Model to Allow User to Submit Stories (*BROKE THE WHOLE PROJECT, SLUG ERROR WITH MIGRATIONS*)
 
@@ -286,7 +295,7 @@ Working on a Custom Model to Allow User to Submit Stories (*BROKE THE WHOLE PROJ
 
 | **Feature**  | **Expected Result** | **Action Taken** | **Result** |
 | ------------- | ------------- | ------------- | ------------- |
-| Approve and Deny Stories | Story approved or denied | Approved short story and denied short story | **DOES NOT WORK** |
+| Approve and Deny Stories | Story approved or denied | Approved short story and denied short story | Works as Intended |
 
 <br>
 
@@ -398,14 +407,13 @@ Working on a Custom Model to Allow User to Submit Stories (*BROKE THE WHOLE PROJ
 
 | **Feature**  | **Expected Result** | **Action Taken** | **Result** |
 | ------------- | ------------- | ------------- | ------------- |
-| Submit Short Story | User can submit a short story from a form above the footer | Filled out the form and pressed 'Submit' | **DOES NOT WORK** |
+| Submit Short Story | User can submit a short story from a form above the footer | Filled out the form and pressed 'Submit' | Works as Intended |
 
 <br>
 
 ## Known Bugs
 
-Slug Error with Migrations, not sure how to fix it, can't make most recent migration
-This error also caused the /admin panel to completely break down and made it inaccessible if DEBUG is turned off
+N/A
 
 ## Deployment
 
