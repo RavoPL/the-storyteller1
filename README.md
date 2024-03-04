@@ -5,7 +5,7 @@ Developed by **Dorian Wolarz**, a Code Institute Student
 
 *The Storyteller is a Full Stack website which works as a mini blog. Users can create personal accounts and afterwards they can create, share and comment on each other's short stories. In a general sense it will be a very primitive version of WordPress or WattPad.*
 
-[LINK TO HEROKU VERSION](https://the-storyteller.herokuapp.com/)
+[LINK TO HEROKU VERSION](https://the-storyteller1-c9b741a61416.herokuapp.com/)
 
 ![The Storyteller on a PC](N/A)
 
