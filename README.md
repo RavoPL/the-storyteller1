@@ -150,7 +150,9 @@ The website is structured in a user friendly way that makes navigation of its co
 
 Custom *Story Submission* model - **FINISHED**
 
-Corresponding to **User Story - Approve or Reject Short Story**([#18](https://github.com/RavoPL/the-storyteller/issues/18))
+Corresponding to **User Story - Approve or Reject Short Story** in *NEW DIRECTORY ISSUES* ([#15](https://github.com/RavoPL/the-storyteller1/issues/15))
+
+Corresponding to **User Story - Approve or Reject Short Story** in *OLD DIRECTORY ISSUES* ([#18](https://github.com/RavoPL/the-storyteller/issues/18))
 
 ![Image of My Story Submission Model](static/media/others/storysubmission.png)
 
@@ -195,13 +197,28 @@ Corresponding to **User Story - Approve or Reject Short Story**([#18](https://gi
 </details>
 
 <details>
-  <summary>Index Validation</summary>
-  <img src="static/media/others/html_index_validation.png" alt="Index Validation" title="Index HTML Validation">
+  <summary>Index Content Validation</summary>
+  <img src="static/media/others/html_content_validation.png" alt="Index Validation" title="Index HTML Validation">
 </details>
 
 <details>
-  <summary>Post Detail Validation</summary>
-  <img src="static/media/others/html_postdetail_validation.png" alt="Post Detail Validation" title="Post Detail HTML Validation">
+  <summary>Login Validation</summary>
+  <img src="static/media/others/html_login_validation.png" alt="Login Validation" title="Login HTML Validation">
+</details>
+
+<details>
+  <summary>Sign Up Validation</summary>
+  <img src="static/media/others/html_signup_validation.png" alt="Sign Up Validation" title="Sign Up HTML Validation">
+</details>
+
+<details>
+  <summary>Password Reset Validation</summary>
+  <img src="static/media/others/html_passreset_validation.png" alt="Pass Reset Validation" title="Pass Reset HTML Validation">
+</details>
+
+<details>
+  <summary>Password Reset Success Validation</summary>
+  <img src="static/media/others/html_passresetsucc_validation.png" alt="Pass Reset Succ Validation" title="Pass Reset Succ HTML Validation">
 </details>
 
 ### CSS Validation
@@ -411,7 +428,21 @@ Corresponding to **User Story - Approve or Reject Short Story**([#18](https://gi
 
 ## Known Bugs
 
-N/A
+<details>
+
+  ### Sign-Up Form Validation Errors
+  It appears that the basic form from the Code Insititue course *I Think Therefore I Blog* tutorial course is throwing up an error - **FULLY TESTED**
+
+  I've tried fixing it but to no avail, I ended up commenting it out and once I did the page gave no errors at all.
+
+  I'm including two screenshots; one from the online validator and the other from the "Inspect"/F12 view on Microsoft Edge to show the problem.
+  
+  <summary>Django Allauth Form Small Validation Errors</summary>
+
+  <img src="static/media/others/form_validation_error.png" alt="Online Validation Error" title="Online Validation Error">
+
+  <img src="static/media/others/form_inspect.png" alt="Inspect View" title="Inspect and F12 View">
+</details>
 
 ## Deployment
 
