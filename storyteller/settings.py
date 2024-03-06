@@ -173,6 +173,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Allow Crispy Forms to use bootstrap4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-# Tells Django where the login form is
-# LOGIN_URL = 'login-user'
