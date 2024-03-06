@@ -1,5 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # The Storyteller
 Developed by **Dorian Wolarz**, a Code Institute Student
 
@@ -7,7 +5,7 @@ Developed by **Dorian Wolarz**, a Code Institute Student
 
 [LINK TO HEROKU VERSION](https://the-storyteller1-c9b741a61416.herokuapp.com/)
 
-![The Storyteller on a PC](N/A)
+![The Storyteller on a PC](static/media/others/readme-header-image.png)
 
 ## Contents
 1. [Project Goals](#project-goals)
